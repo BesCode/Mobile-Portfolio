@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;  
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    height: 2.5rem;
+    width: 10rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    background-color: #8f3e8f;
+    color: white;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+
+h2{
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bolder;
+    font-size: 2rem;
+    border-bottom: 0.5px dotted purple;
+    border-width: 0.03rem;
+    border-radius: 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: #000;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.case{
+    padding: 0 1.5rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    height: 10rem;
+    background-color: purple;
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav{
+    display: none;
+}
+
+.menu,
+.logo{
+    font-size: 2rem;
+}
+
+.logo{
+    font-family: copperplate;
+    border-bottom: 2px solid white;
+    border-radius: 10px;    
+}
+
+
+
+.mobileNav{
+    position: absolute;
+    background-color: #dd9fdd;
+    left: 0;
+    top: 10rem;
+    width: 100%;
+    height: calc(100vh - 10rem);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.5s linear;
+}
+
+.showMobileNav{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.mobileNav li{
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.mobileNav li:hover{
+    background-color: white;
+    color: black;
+}
+
+.mobileNav a{
+    font-size: 1.6rem;
+}
+
+#home{
+    height: calc(100vh - 10rem);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1530916123588-1e1f619bb71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHB1cnBsZSUyMGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position:center;
+   
+}
+
+#home h1{
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+#home h2{
+    font-size: 2rem;
+    color: white;
+    border: none;
+   
+}
+
+#home h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: white;
+}
+
+.homebuttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.homebuttons .secondbtns{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.homebuttons .secondbtns:hover{
+    background-color: #8f3e8f;
+    color: white;
+}
+
+#about .aboutText h3{
+    font-size: 1.2rem;
+}
+
+#about .aboutText p{
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#portfolio{
+    background-color: #f3eaea;
+}
+
+#portfolio .portGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+
+#portfolio .portGridItem{
+    padding: 1rem;
+    border: 1px gray solid;
+    border-radius: 0.8rem;
+    transition: all 0.5s ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px rgba(0, 0, 0, 0.2) ;
+}
+
+#portfolio .portGridItem:hover{
+    transform: scale(1.02);
+    color: purple;
+}
+
+#portfolio .portGridItem h3{
+    text-align: center;
+    color: purple;
+    font-size: 1.2rem;
+    padding-bottom: 0.3rem; 
+}
+
+#portfolio .portGridItem p{
+    font-size: 1rem;
+}
+
+#contact form{
+    width: 100%;
+}
+
+
+#contact form h3{
+    color: purple;
+    font-size: 1.2rem;
+}
+
+#contact form input{
+    width: 100%;
+    height: 2rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+#contact form textarea{
+    width: 100%;
+    height: 20rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+#contact .submit button{
+    width: 100%;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    border-top: 1px grey solid;
+    margin: 2rem;
+}
+
+#footer h4{
+    font-size: 0.9rem;
+    padding: 1.5rem;
+}
+
+#footer .icons{
+    text-align: center;
+    color: #8f3e8f;
+    
+}
+
+#footer .icons i{
+    font-size: 1.7rem;
+}
+
+#footer .icons i:hover{
+    opacity: 1;
+    color: #b1a3b1;
+}
