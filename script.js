@@ -1,6 +1,6 @@
 var menu = document.querySelector(".menu");
 var mobileNav = document.querySelector(".mobileNav");
-var menuIcon = document.querySelector(".bx");
+var menuIcon = document.querySelector(".menuIcon");
 
 //event change when we click on the menu
 
